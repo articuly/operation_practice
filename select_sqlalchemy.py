@@ -18,10 +18,11 @@ Base = declarative_base()
 class Users(Base):
     __tablename__ = 'users'
     user_id = Column(Integer, primary_key=True)
-    username = Column(String(25))
-    realname = Column(String(25))
-    password = Column(String(64))
+    username = Column(String(32))
+    realname = Column(String(32))
+    password = Column(String(32))
     age = Column(Integer)
+    city = Column(String(32))
 
 
 if __name__ == '__main__':
