@@ -21,7 +21,9 @@ class Users(Base):
     username = Column(String(25))
     realname = Column(String(25))
     password = Column(String(64))
+    age = Column(Integer)
 
 
-res = session.query(Users, Users.username, Users.realname).filter(Users.username.like("py%")).limit(50).all()
-print(res)
+if __name__ == '__main__':
+    res = session.query(Users, Users.username, Users.realname).filter(Users.username.like("py%")).limit(50).all()
+    print(res)
