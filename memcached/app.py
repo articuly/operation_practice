@@ -36,3 +36,7 @@ def get_lists(page):
         print('read from database')
         mc.set(key, 'this is {} page content'.format(page), time=10)
         return 'this is {} page content, <b>read from database</b>'.format(page)
+
+
+if __name__ == '__main__':
+    app.run(debug=True)

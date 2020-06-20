@@ -51,3 +51,4 @@ def register():
             print('insert fail')
         return jsonify({'_id': str(res)})
     return render_template('register.html')
+

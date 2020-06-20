@@ -5,7 +5,7 @@
 
 from redis import StrictRedis
 
-redis = StrictRedis(host="192.168.3.40")
+redis = StrictRedis('127.0.0.1')
 
 # 有序集合类型
 # 有序集合的每一项包含一个score值，根据这个score值可以对集合的项进行排序
