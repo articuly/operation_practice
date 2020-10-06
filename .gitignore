@@ -134,12 +134,8 @@ dmypy.json
 # gitignore template for Jupyter Notebooks
 # website: http://jupyter.org/
 
-.ipynb_checkpoints
 */.ipynb_checkpoints/*
 
-# IPython
-profile_default/
-ipython_config.py
 
 # Remove previous ipynb_checkpoints
 #   git rm -r .ipynb_checkpoints/
@@ -147,3 +143,8 @@ ipython_config.py
 /.idea/
 /safety/.idea/
 *.key
+/http/.idea/
+/multi-processing/.idea/
+/multi-threading/.idea/
+/socket/.idea/
+/wsgi/.idea/
