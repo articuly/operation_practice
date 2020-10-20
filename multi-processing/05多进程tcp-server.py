@@ -25,7 +25,7 @@ def server(client):
                     break
                 else:
                     print("send")
-                    ack_message = "\r\n %s recived..." % str(os.getpid())
+                    ack_message = "\r\n %s received..." % str(os.getpid())
                     client.send(bytes(ack_message, encoding="utf-8"))
 
     # while True:
