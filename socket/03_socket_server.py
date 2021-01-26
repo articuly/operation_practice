@@ -4,7 +4,7 @@ from socket import *
 s_server = socket(AF_INET, SOCK_STREAM)
 
 # 绑定IP与端口号
-s_server.bind(("127.0.0.1", 8000))
+s_server.bind(("127.0.0.1", z))
 
 # 开始监听
 s_server.listen()
